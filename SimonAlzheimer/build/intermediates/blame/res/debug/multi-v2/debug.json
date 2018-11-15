@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\eduar\\AndroidStudioProjects\\SimonAlzheimerApp\\SimonAlzheimer\\build\\intermediates\\res\\merged\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\eduar\\AndroidStudioProjects\\SimonAlzheimerApp\\SimonAlzheimer\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "3,8,13,14,15,12,11,16,7,6",
+                        "startColumns": "4,4,1,1,1,4,4,1,4,4",
+                        "startOffsets": "56,228,453,505,563,404,322,619,182,143",
+                        "endColumns": "52,49,51,57,55,51,81,86,45,38",
+                        "endOffsets": "104,273,503,561,617,451,399,704,223,177"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,108,158,213,274,333,385,467,557,603",
+                        "endColumns": "52,49,54,60,58,51,81,89,45,38",
+                        "endOffsets": "103,153,208,269,328,380,462,552,598,637"
+                    }
+                }
+            ]
+        }
+    ]
+}
