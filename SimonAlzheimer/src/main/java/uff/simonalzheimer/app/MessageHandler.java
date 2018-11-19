@@ -1,6 +1,8 @@
 package uff.simonalzheimer.app;
 
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -28,7 +30,9 @@ public class MessageHandler extends Handler {
 	private void notifyUser(Alert alert){
 		Toast.makeText(context, alert.getMessage(), Toast.LENGTH_LONG).show();
 
+		alert.setTimeStamp(getTimeStamp());
 
+		FileManager.saveAlert(context, alert);
 		Intent intent = new Intent(this.context, MainActivity.class);
 		PendingIntent pIntent = PendingIntent.getActivity(this.context, 0, intent, 0);
 
@@ -72,5 +76,12 @@ public class MessageHandler extends Handler {
 			else
 				Log.d("SDDL", status);
 		}
+	}
+
+	private String getTimeStamp(){
+		Date today = new Date();
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss a");
+		String dateToStr = format.format(today);
+		return dateToStr;
 	}
 }

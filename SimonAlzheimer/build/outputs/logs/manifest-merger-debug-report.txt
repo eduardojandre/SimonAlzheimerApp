@@ -1,76 +1,215 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:2:1-30:12
-MERGED from [com.android.support:support-v4:21.0.0] C:\Users\eduar\.gradle\caches\transforms-1\files-1.1\support-v4-21.0.0.aar\43ee1a626597522fd86a5127c9867399\AndroidManifest.xml:14:4-17:12
-INJECTED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:2:1-30:12
+ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:2:1-48:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\232edfb78a9658eba048ad4cedc85448\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:design:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\ab150e6a7ea9557ab247ad69f4355a1b\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\4a567e293ad6863cf7025dfa38f5b16a\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:transition:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\61b7b827a2c759dfa23fc8c47209d3fb\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\95e46b961b382ccb842417e0e873f0fe\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\ad5f4cad68945e664bb838574bf305a2\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\ee2053973a712975db60a78731dee7b3\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\0acd2422da159238b13d5986eebd5929\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\ef825b0d24123ec04075f427d46572d6\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\8fa0f641e64565514a3440d90d257138\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\87b4fc110250a05896930019e4d10700\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\283891bd475a24065cec6987c7505380\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\3c253fb8b5804824b907683dbc5e8b18\AndroidManifest.xml:17:1-31:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\65bb9fb2ca9d3cafa9f4cc8124be9c47\AndroidManifest.xml:17:1-30:12
+INJECTED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:2:1-48:12
 	package
-		ADDED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:3:5-37
-		INJECTED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:3:5-37
+		INJECTED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:5:5-30
-		INJECTED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:4:5-28
-		INJECTED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml
-uses-sdk
-ADDED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:7:5-9:41
-INJECTED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:7:5-9:41
-INJECTED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-v4:21.0.0] C:\Users\eduar\.gradle\caches\transforms-1\files-1.1\support-v4-21.0.0.aar\43ee1a626597522fd86a5127c9867399\AndroidManifest.xml:15:5-42
-MERGED from [com.android.support:support-v4:21.0.0] C:\Users\eduar\.gradle\caches\transforms-1\files-1.1\support-v4-21.0.0.aar\43ee1a626597522fd86a5127c9867399\AndroidManifest.xml:15:5-42
-INJECTED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:7:5-9:41
-INJECTED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:7:5-9:41
-	android:targetSdkVersion
-		ADDED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:9:9-38
-		INJECTED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml
-	android:minSdkVersion
-		ADDED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:8:9-35
-		INJECTED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:11:5-67
+ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:7:5-67
 	android:name
-		ADDED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:11:22-64
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:7:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:8:22-78
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:9:5-75
+	android:name
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:9:22-72
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:10:5-80
+	android:name
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:10:22-77
 application
-ADDED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:13:5-28:19
-MERGED from [com.android.support:support-v4:21.0.0] C:\Users\eduar\.gradle\caches\transforms-1\files-1.1\support-v4-21.0.0.aar\43ee1a626597522fd86a5127c9867399\AndroidManifest.xml:16:5-19
-MERGED from [com.android.support:support-v4:21.0.0] C:\Users\eduar\.gradle\caches\transforms-1\files-1.1\support-v4-21.0.0.aar\43ee1a626597522fd86a5127c9867399\AndroidManifest.xml:16:5-19
+ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:12:5-46:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\232edfb78a9658eba048ad4cedc85448\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\232edfb78a9658eba048ad4cedc85448\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\ab150e6a7ea9557ab247ad69f4355a1b\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:design:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\ab150e6a7ea9557ab247ad69f4355a1b\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\4a567e293ad6863cf7025dfa38f5b16a\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\4a567e293ad6863cf7025dfa38f5b16a\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:transition:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\61b7b827a2c759dfa23fc8c47209d3fb\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\61b7b827a2c759dfa23fc8c47209d3fb\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\95e46b961b382ccb842417e0e873f0fe\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\95e46b961b382ccb842417e0e873f0fe\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\ad5f4cad68945e664bb838574bf305a2\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\ad5f4cad68945e664bb838574bf305a2\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\ee2053973a712975db60a78731dee7b3\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\ee2053973a712975db60a78731dee7b3\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\0acd2422da159238b13d5986eebd5929\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\0acd2422da159238b13d5986eebd5929\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\ef825b0d24123ec04075f427d46572d6\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\ef825b0d24123ec04075f427d46572d6\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\8fa0f641e64565514a3440d90d257138\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\8fa0f641e64565514a3440d90d257138\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\87b4fc110250a05896930019e4d10700\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\87b4fc110250a05896930019e4d10700\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\283891bd475a24065cec6987c7505380\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\283891bd475a24065cec6987c7505380\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\3c253fb8b5804824b907683dbc5e8b18\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\3c253fb8b5804824b907683dbc5e8b18\AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\65bb9fb2ca9d3cafa9f4cc8124be9c47\AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\65bb9fb2ca9d3cafa9f4cc8124be9c47\AndroidManifest.xml:24:5-28:19
 	android:label
-		ADDED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:16:9-41
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:15:9-41
 	android:icon
-		ADDED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:15:9-45
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:14:9-53
 	android:allowBackup
-		ADDED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:14:9-35
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:13:9-35
 activity#uff.simonalzheimer.app.MainActivity
-ADDED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:17:9-25:20
+ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:16:9-23:20
 	android:label
-		ADDED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:19:13-45
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:18:13-45
+	android:theme
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:19:13-44
 	android:name
-		ADDED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:18:13-63
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:20:13-24:29
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:17:13-41
+intent-filter#action:name:android.intent.action.MAIN
+ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:20:13-22:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:21:17-69
+ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:21:17-69
 	android:name
-		ADDED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:21:25-66
-category#android.intent.category.LAUNCHER
-ADDED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:23:17-77
-	android:name
-		ADDED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:23:27-74
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:21:25-66
 service#uff.simonalzheimer.app.CommunicationService
-ADDED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:27:9-102
+ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:25:9-27:38
 	android:enabled
-		ADDED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:27:18-40
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:27:13-35
 	android:name
-		ADDED from C:\Users\eduar\AndroidStudioProjects\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:27:41-99
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:26:13-49
+activity#uff.simonalzheimer.app.SplashActivity
+ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:29:9-37:20
+	android:theme
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:31:13-47
+	android:name
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:30:13-43
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:32:13-36:29
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:35:17-77
+	android:name
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:35:27-74
+activity#uff.simonalzheimer.app.Main2Activity
+ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:38:9-41:47
+	android:label
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:40:13-57
+	android:theme
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:41:13-44
+	android:name
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:39:13-42
+activity#uff.simonalzheimer.app.AddRoutineActivity
+ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:42:9-45:46
+	android:label
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:44:13-40
+	android:theme
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:45:13-44
+	android:name
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:43:13-47
+uses-sdk
+INJECTED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\232edfb78a9658eba048ad4cedc85448\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\232edfb78a9658eba048ad4cedc85448\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\ab150e6a7ea9557ab247ad69f4355a1b\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\ab150e6a7ea9557ab247ad69f4355a1b\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\4a567e293ad6863cf7025dfa38f5b16a\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\4a567e293ad6863cf7025dfa38f5b16a\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:transition:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\61b7b827a2c759dfa23fc8c47209d3fb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\61b7b827a2c759dfa23fc8c47209d3fb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\95e46b961b382ccb842417e0e873f0fe\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\95e46b961b382ccb842417e0e873f0fe\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\ad5f4cad68945e664bb838574bf305a2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\ad5f4cad68945e664bb838574bf305a2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\ee2053973a712975db60a78731dee7b3\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\ee2053973a712975db60a78731dee7b3\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\0acd2422da159238b13d5986eebd5929\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\0acd2422da159238b13d5986eebd5929\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\ef825b0d24123ec04075f427d46572d6\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\ef825b0d24123ec04075f427d46572d6\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\8fa0f641e64565514a3440d90d257138\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\8fa0f641e64565514a3440d90d257138\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\87b4fc110250a05896930019e4d10700\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\87b4fc110250a05896930019e4d10700\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\283891bd475a24065cec6987c7505380\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\283891bd475a24065cec6987c7505380\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\3c253fb8b5804824b907683dbc5e8b18\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\3c253fb8b5804824b907683dbc5e8b18\AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\65bb9fb2ca9d3cafa9f4cc8124be9c47\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\65bb9fb2ca9d3cafa9f4cc8124be9c47\AndroidManifest.xml:20:5-22:41
+INJECTED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\ab150e6a7ea9557ab247ad69f4355a1b\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\ab150e6a7ea9557ab247ad69f4355a1b\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\4a567e293ad6863cf7025dfa38f5b16a\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\4a567e293ad6863cf7025dfa38f5b16a\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:transition:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\61b7b827a2c759dfa23fc8c47209d3fb\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\61b7b827a2c759dfa23fc8c47209d3fb\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\95e46b961b382ccb842417e0e873f0fe\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\95e46b961b382ccb842417e0e873f0fe\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\ad5f4cad68945e664bb838574bf305a2\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\ad5f4cad68945e664bb838574bf305a2\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\ee2053973a712975db60a78731dee7b3\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\ee2053973a712975db60a78731dee7b3\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\0acd2422da159238b13d5986eebd5929\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\0acd2422da159238b13d5986eebd5929\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\ef825b0d24123ec04075f427d46572d6\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\ef825b0d24123ec04075f427d46572d6\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\8fa0f641e64565514a3440d90d257138\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\8fa0f641e64565514a3440d90d257138\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\87b4fc110250a05896930019e4d10700\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\87b4fc110250a05896930019e4d10700\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\283891bd475a24065cec6987c7505380\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\283891bd475a24065cec6987c7505380\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\3c253fb8b5804824b907683dbc5e8b18\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\3c253fb8b5804824b907683dbc5e8b18\AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:design:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\ab150e6a7ea9557ab247ad69f4355a1b\AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:design:26.1.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\ab150e6a7ea9557ab247ad69f4355a1b\AndroidManifest.xml:27:13-51
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\65bb9fb2ca9d3cafa9f4cc8124be9c47\AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\65bb9fb2ca9d3cafa9f4cc8124be9c47\AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Juan Lucas Vieira\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\65bb9fb2ca9d3cafa9f4cc8124be9c47\AndroidManifest.xml:26:13-58

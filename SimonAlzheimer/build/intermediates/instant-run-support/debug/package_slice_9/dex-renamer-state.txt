@@ -1,4 +1,0 @@
-#Thu Nov 15 15:43:57 BRST 2018
-base.0=C\:\\Users\\eduar\\AndroidStudioProjects\\SimonAlzheimerApp\\SimonAlzheimer\\build\\intermediates\\transforms\\dexMerger\\debug\\9
-path.0=classes.dex
-renamed.0=classes.dex
