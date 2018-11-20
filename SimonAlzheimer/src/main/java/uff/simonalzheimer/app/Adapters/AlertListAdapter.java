@@ -7,29 +7,22 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
-import android.widget.ImageView;
-import android.widget.Switch;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
 import uff.simonalzheimer.app.R;
-import uff.simonalzheimer.app.Main2Activity;
+import uff.simonalzheimer.app.Activities.Main2Activity;
 import uff.simonalzheimer.messages.Alert;
 import uff.simonalzheimer.app.FileManager;
 
-/**
- * Created by Juan Lucas Vieira on 11/11/2017.
- */
+
 
 public class AlertListAdapter extends ArrayAdapter<Alert> {
 
     private final Activity context;
     private ArrayList<Alert> alerts;
     private int layout;
-    private View rowView;
-
-    private Main2Activity mainActivity;
 
     private boolean[] checked_positions;
 
@@ -40,19 +33,19 @@ public class AlertListAdapter extends ArrayAdapter<Alert> {
         this.alerts = alerts;
         this.context = context;
         this.layout = layout;
-        this.mainActivity = mainActivity;
+        Main2Activity mainActivity1 = mainActivity;
     }
 
     public View getView(final int position, View view, ViewGroup parent) {
         LayoutInflater inflater = context.getLayoutInflater();
-        rowView = inflater.inflate(layout, null, true);
-        TextView timeStamp = (TextView) rowView.findViewById(R.id.alert_timestamp);
-        TextView msg = (TextView) rowView.findViewById(R.id.alert_msg);
+        View rowView = inflater.inflate(layout, null, true);
+        TextView timeStamp = rowView.findViewById(R.id.alert_timestamp);
+        TextView msg = rowView.findViewById(R.id.alert_msg);
         final Alert a = alerts.get(position);
         timeStamp.setText(a.getTimeStamp());
         msg.setText(a.getMessage());
 
-        CheckBox checkBox = (CheckBox) rowView.findViewById(R.id.alert_checkbox);
+        CheckBox checkBox = rowView.findViewById(R.id.alert_checkbox);
         checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {

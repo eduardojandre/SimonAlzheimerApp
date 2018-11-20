@@ -9,25 +9,13 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
-import java.io.File;
-import java.util.ArrayList;
-
-import uff.simonalzheimer.app.FileManager;
 import uff.simonalzheimer.app.R;
-import uff.simonalzheimer.app.Main2Activity;
-import uff.simonalzheimer.app.ServerConnectionStub;
-import uff.simonalzheimer.messages.Alert;
+import uff.simonalzheimer.app.Activities.Main2Activity;
 
-/**
- * Created by Juan Lucas Vieira on 06/09/2017.
- */
 
 public class DashboardFragment extends Fragment {
 
@@ -53,15 +41,15 @@ public class DashboardFragment extends Fragment {
 
         navActivity = (Main2Activity) getActivity();
 
-        TextView patient_name = (TextView) view.findViewById(R.id.patient_name);
-        LinearLayout alerts_layout = (LinearLayout) view.findViewById(R.id.alerts_dash_layout);
-        LinearLayout routines_layout = (LinearLayout) view.findViewById(R.id.routines_dash_layout);
-        ImageButton call_btn = (ImageButton) view.findViewById(R.id.call_btn);
-        ImageButton msg_btn = (ImageButton) view.findViewById(R.id.msg_btn);
+        TextView patient_name = view.findViewById(R.id.patient_name);
+        LinearLayout alerts_layout = view.findViewById(R.id.alerts_dash_layout);
+        LinearLayout routines_layout = view.findViewById(R.id.routines_dash_layout);
+        ImageButton call_btn = view.findViewById(R.id.call_btn);
+        ImageButton msg_btn = view.findViewById(R.id.msg_btn);
 
         //String.format(context.getString(R.string.bus_num_txt),a.getBus().getUniqueCode()
-        TextView routines_msg_txt = (TextView) view.findViewById(R.id.routines_msg);
-        TextView alert_msg_txt = (TextView) view.findViewById(R.id.alert_msg);
+        TextView routines_msg_txt = view.findViewById(R.id.routines_msg);
+        TextView alert_msg_txt = view.findViewById(R.id.alert_msg);
 
         patient_name.setText(navActivity.getPatientName());
         routines_msg_txt.setText(String.format(getContext().getString(R.string.dash_routine_msg),navActivity.getRoutinesNumber()));

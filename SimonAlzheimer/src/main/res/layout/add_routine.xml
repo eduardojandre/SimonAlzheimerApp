@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="uff.simonalzheimer.app.AddRoutineActivity">
+    tools:context="uff.simonalzheimer.app.Activities.AddRoutineActivity">
 
     <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
@@ -25,7 +25,6 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/conditionTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -79,7 +78,6 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/actionTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"

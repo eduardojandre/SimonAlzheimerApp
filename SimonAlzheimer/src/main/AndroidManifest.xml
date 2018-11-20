@@ -27,7 +27,7 @@
             android:enabled="true" />
 
         <activity
-            android:name=".SplashActivity"
+            android:name=".Activities.SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,11 +36,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Main2Activity"
+            android:name=".Activities.Main2Activity"
             android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".AddRoutineActivity"
+            android:name=".Activities.AddRoutineActivity"
             android:label="New Routine"
             android:theme="@style/AppTheme"/>
     </application>

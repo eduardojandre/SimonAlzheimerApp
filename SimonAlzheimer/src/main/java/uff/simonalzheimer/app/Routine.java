@@ -2,9 +2,6 @@ package uff.simonalzheimer.app;
 
 import java.util.ArrayList;
 
-/**
- * Created by Juan Lucas Vieira on 19/11/2018.
- */
 
 public class Routine {
 
@@ -17,8 +14,8 @@ public class Routine {
         this.actions = new ArrayList<>();
     }
 
-    public void addCondition(String key, String value){
-        conditions.add(new Condition<String, String>(key,value));
+    public void addCondition(String key, String value, boolean notValue){
+        conditions.add(new Condition<>(key, value, notValue));
     }
 
     public void addAction(String action){

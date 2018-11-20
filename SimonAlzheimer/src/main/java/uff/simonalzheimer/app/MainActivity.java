@@ -37,15 +37,13 @@ public class MainActivity extends Activity {
 	private static String uniqueID = null;
 	private static final String PREF_UNIQUE_ID = "PREF_UNIQUE_ID";
 
-	private Button btn_register;
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
 		/* GUI Elements */
-        btn_register = (Button) findViewById(R.id.btn_register);
+		Button btn_register = findViewById(R.id.btn_register);
 
         StartService();
 		/* Ping Button Listener*/

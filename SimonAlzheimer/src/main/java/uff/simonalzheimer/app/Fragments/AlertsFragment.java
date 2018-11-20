@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,11 +18,8 @@ import uff.simonalzheimer.app.Adapters.AlertListAdapter;
 import uff.simonalzheimer.app.FileManager;
 import uff.simonalzheimer.messages.Alert;
 import uff.simonalzheimer.app.R;
-import uff.simonalzheimer.app.Main2Activity;
+import uff.simonalzheimer.app.Activities.Main2Activity;
 
-/**
- * Created by Juan Lucas Vieira on 06/09/2017.
- */
 
 public class AlertsFragment extends Fragment {
 
@@ -60,10 +56,10 @@ public class AlertsFragment extends Fragment {
 
         navActivity = (Main2Activity) getActivity();
 
-        alertsList = (ListView) getActivity().findViewById(R.id.alerts_list_view);
+        alertsList = getActivity().findViewById(R.id.alerts_list_view);
         adapter = new AlertListAdapter(getActivity(), alerts, R.layout.alert_item, navActivity);
 
-        delete_fab = (FloatingActionButton) view.findViewById(R.id.delete_btn);
+        delete_fab = view.findViewById(R.id.delete_btn);
         delete_fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -82,8 +78,8 @@ public class AlertsFragment extends Fragment {
 
         alertsList.setAdapter(adapter);
 
-        help_txt = (TextView) getActivity().findViewById(R.id.alertsTxtView);
-        bell_icon = (ImageView) getActivity().findViewById(R.id.bell_icon);
+        help_txt = getActivity().findViewById(R.id.alertsTxtView);
+        bell_icon = getActivity().findViewById(R.id.bell_icon);
 
     }
 

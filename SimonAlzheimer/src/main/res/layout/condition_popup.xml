@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
@@ -21,7 +20,6 @@
         android:paddingTop="20dp">
 
         <LinearLayout
-            android:id="@+id/title_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -29,7 +27,6 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView9"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp"
@@ -43,7 +40,6 @@
         </LinearLayout>
 
         <View
-            android:id="@+id/separator"
             android:layout_width="160dip"
             android:layout_height="1dip"
             android:layout_gravity="center_horizontal"
@@ -51,7 +47,6 @@
             android:background="#cecece" />
 
         <TextView
-            android:id="@+id/type_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -69,7 +64,6 @@
 
 
         <TextView
-            android:id="@+id/second_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -78,6 +72,12 @@
             android:text="@string/cond_popup_value_txt"
             android:textAlignment="center"
             android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/not_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not" />
 
         <Spinner
             android:id="@+id/value_spinner"

@@ -1,10 +1,5 @@
 package uff.simonalzheimer.app;
 
-import java.util.ArrayList;
-
-/**
- * Created by Juan Lucas Vieira on 19/11/2018.
- */
 
 class RuleValues {
 

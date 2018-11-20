@@ -35,7 +35,7 @@ public class CommunicationService extends Service {
 	private Handler handler;
 	private Bundle extras;
 	private UUID clientID;
-	private ArrayList<Message> msgLst = new ArrayList<Message>();
+	private ArrayList<Message> msgLst = new ArrayList<>();
 	
 	@Override
 	public void onCreate() {

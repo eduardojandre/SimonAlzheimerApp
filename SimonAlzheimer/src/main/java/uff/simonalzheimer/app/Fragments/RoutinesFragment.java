@@ -1,6 +1,5 @@
 package uff.simonalzheimer.app.Fragments;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -15,24 +14,15 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import uff.simonalzheimer.app.Adapters.AlertListAdapter;
 import uff.simonalzheimer.app.Adapters.RoutineListAdapter;
-import uff.simonalzheimer.app.AddRoutineActivity;
-import uff.simonalzheimer.app.FileManager;
-import uff.simonalzheimer.app.Main2Activity;
-import uff.simonalzheimer.app.MainActivity;
+import uff.simonalzheimer.app.Activities.AddRoutineActivity;
+import uff.simonalzheimer.app.Activities.Main2Activity;
 import uff.simonalzheimer.app.R;
 import uff.simonalzheimer.app.Routine;
-import uff.simonalzheimer.app.SplashActivity;
-import uff.simonalzheimer.messages.Alert;
 
-/**
- * Created by Juan Lucas Vieira on 06/09/2017.
- */
 
 public class RoutinesFragment extends Fragment {
 
-    private FloatingActionButton add_fab;
     private ListView routineList;
     private TextView help_txt;
     private ImageView routine_icon;
@@ -65,10 +55,10 @@ public class RoutinesFragment extends Fragment {
 
         navActivity = (Main2Activity) getActivity();
 
-        routineList = (ListView) getActivity().findViewById(R.id.routines_list_view);
+        routineList = getActivity().findViewById(R.id.routines_list_view);
         adapter = new RoutineListAdapter(getActivity(), routines, R.layout.routine_item, navActivity);
 
-        add_fab = (FloatingActionButton) view.findViewById(R.id.add_btn);
+        FloatingActionButton add_fab = view.findViewById(R.id.add_btn);
         add_fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -79,8 +69,8 @@ public class RoutinesFragment extends Fragment {
 
         routineList.setAdapter(adapter);
 
-        help_txt = (TextView) getActivity().findViewById(R.id.routineTxtView);
-        routine_icon = (ImageView) getActivity().findViewById(R.id.routines_icon);
+        help_txt = getActivity().findViewById(R.id.routineTxtView);
+        routine_icon = getActivity().findViewById(R.id.routines_icon);
 
     }
 

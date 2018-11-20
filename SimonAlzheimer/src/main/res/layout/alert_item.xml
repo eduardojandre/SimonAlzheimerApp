@@ -24,7 +24,6 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/imageView"
                 android:layout_width="wrap_content"
                 android:layout_height="32dp"
                 app:srcCompat="@drawable/ic_notifications_none_white_24dp" />
@@ -50,7 +49,6 @@
         </LinearLayout>
 
         <View
-            android:id="@+id/separator"
             android:layout_width="match_parent"
             android:layout_height="1dip"
             android:layout_gravity="center_vertical"

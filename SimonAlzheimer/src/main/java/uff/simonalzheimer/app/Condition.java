@@ -1,17 +1,24 @@
 package uff.simonalzheimer.app;
 
-/**
- * Created by Juan Lucas Vieira on 19/11/2018.
- */
 
 public class Condition<X,Y> {
 
     private X key;
     private Y value;
+    private boolean notValue = false;
 
-    public Condition(X key, Y value) {
+    public Condition(X key, Y value, boolean notValue) {
         this.key = key;
         this.value = value;
+        this.notValue = notValue;
+    }
+
+    public boolean getNotValueBool() {
+        return notValue;
+    }
+
+    public void setNotValue(boolean notValue) {
+        this.notValue = notValue;
     }
 
     public X getKey() {

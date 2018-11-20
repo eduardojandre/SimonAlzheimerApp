@@ -107,34 +107,34 @@ ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAl
 		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:27:13-35
 	android:name
 		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:26:13-49
-activity#uff.simonalzheimer.app.SplashActivity
+activity#uff.simonalzheimer.app.Activities.SplashActivity
 ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:29:9-37:20
 	android:theme
 		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:31:13-47
 	android:name
-		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:30:13-43
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:30:13-54
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:32:13-36:29
 category#android.intent.category.LAUNCHER
 ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:35:17-77
 	android:name
 		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:35:27-74
-activity#uff.simonalzheimer.app.Main2Activity
+activity#uff.simonalzheimer.app.Activities.Main2Activity
 ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:38:9-41:47
 	android:label
 		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:40:13-57
 	android:theme
 		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:41:13-44
 	android:name
-		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:39:13-42
-activity#uff.simonalzheimer.app.AddRoutineActivity
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:39:13-53
+activity#uff.simonalzheimer.app.Activities.AddRoutineActivity
 ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:42:9-45:46
 	android:label
 		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:44:13-40
 	android:theme
 		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:45:13-44
 	android:name
-		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:43:13-47
+		ADDED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml:43:13-58
 uses-sdk
 INJECTED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Juan Lucas Vieira\Documents\GitHub\SimonAlzheimerApp\SimonAlzheimer\src\main\AndroidManifest.xml

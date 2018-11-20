@@ -4,18 +4,14 @@
     <string name="app_name">Simon Alzheimer</string>
 
     <!-- Static Elements -->
-    <string name="uuid">UUID:</string>
     <string name="register">Register</string>
     <string name="ipValue">10.0.2.2:5500</string>
 
     <!-- Dialog and Toast Messages -->
     <string name="msg_e_invalid_ip">"Invalid IP:PORT, please try again."</string>
-    <string name="msg_d_valid_ip">"IP ok!"</string>
     <string name="msg_d_connected">Conectado!</string>
     <string name="msg_d_disconnected">Desconectado!</string>
-    <string name="msg_d_reconnected">Reconectado!</string>
     <string name="msg_e_servicenotrunning">Communication Service is not running!</string>
-    <string name="title_activity_splash">SplashActivity</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_home">Home</string>
     <string name="title_routines">Routines</string>
@@ -32,7 +28,6 @@
     <string name="alerts_frag_title">Alerts</string>
     <string name="alerts_empty_msg">No Alerts</string>
     <string name="welcome_title">Welcome back!</string>
-    <string name="dashboard_title">Dashboard</string>
     <string name="dash_alert_msg">You have %1$d alert(s).</string>
     <string name="dash_routine_msg">You have set %1$d routine(s).</string>
     <string name="cond_placeholder">- %1$s: %2$d</string>

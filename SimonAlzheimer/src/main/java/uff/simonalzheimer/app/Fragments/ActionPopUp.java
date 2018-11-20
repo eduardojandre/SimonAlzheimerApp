@@ -8,29 +8,19 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AlertDialog;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
 import java.util.ArrayList;
 
-import uff.simonalzheimer.app.Condition;
 import uff.simonalzheimer.app.R;
 
-;
-
-/**
- * Created by Juan Lucas Vieira on 07/09/2017.
- */
 
 public class ActionPopUp extends DialogFragment {
-
-    private Bundle args;
 
     Spinner action_spinner;
 
@@ -48,7 +38,7 @@ public class ActionPopUp extends DialogFragment {
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        args = getArguments();
+        Bundle args = getArguments();
 
         ArrayList<String> keys = args.getStringArrayList("actions");
 
@@ -57,12 +47,12 @@ public class ActionPopUp extends DialogFragment {
 
         View v = inflater.inflate(R.layout.action_popup, null);
 
-        action_spinner = (Spinner) v.findViewById(R.id.action_spinner);
+        action_spinner = v.findViewById(R.id.action_spinner);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getContext(),android.R.layout.simple_spinner_dropdown_item, keys);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_spinner_dropdown_item, keys);
         action_spinner.setAdapter(adapter);
 
-        ok_pick_btn = (Button) v.findViewById(R.id.ok_act_btn);
+        ok_pick_btn = v.findViewById(R.id.ok_act_btn);
 
         ok_pick_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,7 +62,7 @@ public class ActionPopUp extends DialogFragment {
             }
         });
 
-        Button cancel_btn = (Button) v.findViewById(R.id.cancel_act_btn);
+        Button cancel_btn = v.findViewById(R.id.cancel_act_btn);
         cancel_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

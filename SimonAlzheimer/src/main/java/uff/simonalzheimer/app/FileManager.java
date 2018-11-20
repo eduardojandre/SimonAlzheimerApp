@@ -10,15 +10,11 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 
 import uff.simonalzheimer.messages.Alert;
 
-/**
- * Created by Juan Lucas Vieira on 18/11/2018.
- */
+
 
 public class FileManager {
 
@@ -53,7 +49,7 @@ public class FileManager {
     }
 
     public static boolean saveAlertsToFile(Context c, ArrayList<Alert> alerts) {
-        File f = null;
+        File f;
         try {
             f = new File(c.getFilesDir(), "alerts.cfg");
             FileOutputStream out = new FileOutputStream(f, false);

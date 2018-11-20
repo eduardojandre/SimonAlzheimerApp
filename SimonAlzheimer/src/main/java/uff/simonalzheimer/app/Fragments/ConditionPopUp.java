@@ -15,18 +15,13 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
+import android.widget.CheckBox;
 import android.widget.Spinner;
 
 import java.util.ArrayList;
 
-import uff.simonalzheimer.app.Condition;
-import uff.simonalzheimer.app.R;;
+import uff.simonalzheimer.app.R;
 
-/**
- * Created by Juan Lucas Vieira on 07/09/2017.
- */
 
 public class ConditionPopUp extends DialogFragment {
 
@@ -34,6 +29,7 @@ public class ConditionPopUp extends DialogFragment {
 
     Spinner type_spinner;
     Spinner value_spinner;
+    CheckBox not_checkbox;
 
     ArrayAdapter<String> values_adapter;
     ArrayList<String> valuesOfKey;
@@ -41,7 +37,7 @@ public class ConditionPopUp extends DialogFragment {
     Button ok_pick_btn;
 
     public interface ConditionPopUpListener {
-        void onFinishCondition(String condition, String value);
+        void onFinishCondition(String condition, String value, boolean notValue);
     }
 
     public ConditionPopUp(){
@@ -61,14 +57,15 @@ public class ConditionPopUp extends DialogFragment {
 
         View v = inflater.inflate(R.layout.condition_popup, null);
 
-        type_spinner = (Spinner) v.findViewById(R.id.type_spinner);
-        value_spinner = (Spinner) v.findViewById(R.id.value_spinner);
+        type_spinner = v.findViewById(R.id.type_spinner);
+        value_spinner = v.findViewById(R.id.value_spinner);
+        not_checkbox = v.findViewById(R.id.not_checkbox);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getContext(),android.R.layout.simple_spinner_dropdown_item, keys);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_spinner_dropdown_item, keys);
         type_spinner.setAdapter(adapter);
 
         retrieveValues(type_spinner.getSelectedItem().toString());
-        values_adapter = new ArrayAdapter<String>(getContext(),android.R.layout.simple_spinner_dropdown_item, valuesOfKey);
+        values_adapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_spinner_dropdown_item, valuesOfKey);
         value_spinner.setAdapter(values_adapter);
 
         type_spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -83,7 +80,7 @@ public class ConditionPopUp extends DialogFragment {
             }
         });
 
-        ok_pick_btn = (Button) v.findViewById(R.id.ok_cond_btn);
+        ok_pick_btn = v.findViewById(R.id.ok_cond_btn);
 
         ok_pick_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -93,7 +90,7 @@ public class ConditionPopUp extends DialogFragment {
             }
         });
 
-        Button cancel_btn = (Button) v.findViewById(R.id.cancel_cond_btn);
+        Button cancel_btn = v.findViewById(R.id.cancel_cond_btn);
         cancel_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -113,13 +110,13 @@ public class ConditionPopUp extends DialogFragment {
         valuesOfKey.addAll(values_aux);
         Log.d("Key Specified:", s);
         Log.d("Values of Key", valuesOfKey.toString());
-        values_adapter = new ArrayAdapter<String>(getContext(),android.R.layout.simple_spinner_dropdown_item, valuesOfKey);
+        values_adapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_spinner_dropdown_item, valuesOfKey);
         value_spinner.setAdapter(values_adapter);
     }
 
     private void sendResultToActivity(){
         ConditionPopUpListener activity = (ConditionPopUpListener) getActivity();
-        activity.onFinishCondition(type_spinner.getSelectedItem().toString(), value_spinner.getSelectedItem().toString());
+        activity.onFinishCondition(type_spinner.getSelectedItem().toString(), value_spinner.getSelectedItem().toString(), not_checkbox.isChecked());
     }
 
     @Nullable
