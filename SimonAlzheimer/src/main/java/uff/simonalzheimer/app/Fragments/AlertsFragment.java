@@ -16,6 +16,7 @@ import java.util.ArrayList;
 
 import uff.simonalzheimer.app.Adapters.AlertListAdapter;
 import uff.simonalzheimer.app.FileManager;
+import uff.simonalzheimer.app.ServerConnectionStub;
 import uff.simonalzheimer.messages.Alert;
 import uff.simonalzheimer.app.R;
 import uff.simonalzheimer.app.Activities.Main2Activity;
@@ -65,6 +66,7 @@ public class AlertsFragment extends Fragment {
             public void onClick(View v) {
                 if(adapter.isDeleteModeEnabled()){
                     adapter.deleteChecked();
+                    setAlerts(adapter.getAllAlerts());
                     delete_fab.setImageResource(R.drawable.ic_delete_white_24dp);
                     if(adapter.isEmpty()){
                         displayEmpty();
@@ -106,16 +108,15 @@ public class AlertsFragment extends Fragment {
             displayEmpty();
         }
     }
+    public void setAlerts(ArrayList<Alert> alerts){
+        ServerConnectionStub stub=ServerConnectionStub.getInstance();
+        stub.setAlerts(alerts);
+    }
 
     public ArrayList<Alert> getAlerts(Context c){
-        ArrayList<Alert> read_alerts = FileManager.readAlerts(c);
-
-        //Debug
-        //TODO:Remove this later.
-        read_alerts = new ArrayList<>();
-        read_alerts.add(new Alert("18/11/2018 16:43:20", "Alzira forgot to take the medicine!"));
-        read_alerts.add(new Alert("18/11/2018 16:45:20", "Alzira heartrate is high!"));
-
+        ArrayList<Alert> read_alerts;
+        ServerConnectionStub stub=ServerConnectionStub.getInstance();
+        read_alerts=stub.getAlerts();
         return read_alerts;
     }
 

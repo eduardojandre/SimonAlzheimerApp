@@ -1,20 +1,30 @@
 package uff.simonalzheimer.app.Activities;
 
+import android.app.ActivityManager;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.UUID;
 
+import uff.simonalzheimer.app.CommunicationService;
 import uff.simonalzheimer.app.Fragments.AlertsFragment;
 import uff.simonalzheimer.app.Fragments.DashboardFragment;
 import uff.simonalzheimer.app.Fragments.RoutinesFragment;
+import uff.simonalzheimer.app.IPPort;
 import uff.simonalzheimer.app.R;
 import uff.simonalzheimer.app.Routine;
 import uff.simonalzheimer.app.ServerConnectionStub;
+import uff.simonalzheimer.messages.Registration;
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -29,6 +39,10 @@ public class Main2Activity extends AppCompatActivity {
     private String patientNumber;
     private ArrayList<Routine> routines;
 
+    private static String uniqueID = null;
+    private static final String PREF_UNIQUE_ID = "PREF_UNIQUE_ID";
+
+    public static Main2Activity _this;
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -51,6 +65,8 @@ public class Main2Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        _this=this;
+        StartService();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
@@ -69,11 +85,24 @@ public class Main2Activity extends AppCompatActivity {
             navigation.setSelectedItemId(0);
         }
 
+
+
         serverConnect = ServerConnectionStub.getInstance();
 
         patientName = serverConnect.getPatientName();
         patientNumber = serverConnect.getPatientNumber();
         routines = serverConnect.getRoutines();
+    }
+    public void register(){
+        if(isMyServiceRunning(CommunicationService.class)){
+            Registration registerRequest = new Registration();
+            registerRequest.setType(Registration.ClientType.Caregiver);
+
+            Intent i = new Intent(Main2Activity.this, CommunicationService.class);
+            i.setAction("lac.contextnet.sddl_pingservicetest.broadcastmessage." + "ActionSendPingMsg");
+            i.putExtra("lac.contextnet.sddl_pingservicetest.broadcastmessage." + "ExtraPingMsg", registerRequest);
+            LocalBroadcastManager.getInstance(getBaseContext()).sendBroadcast(i);
+        }
     }
     public void changeView(int id){
         switch (id) {
@@ -113,5 +142,54 @@ public class Main2Activity extends AppCompatActivity {
 
     public int getRoutinesNumber() {
         return routines.size();
+    }
+
+    private boolean isMyServiceRunning(Class<?> serviceClass) {
+        ActivityManager manager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+        for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
+            if (serviceClass.getName().equals(service.service.getClassName())) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private void StopService(){
+        stopService(new Intent(getBaseContext(), CommunicationService.class));
+    }
+    private void StartService(){
+        String ipPort = getResources().getText(R.string.ipValue).toString();
+
+
+        if(!IPPort.IPRegexChecker(ipPort))
+        {
+            Toast.makeText(getBaseContext(), getResources().getText(R.string.msg_e_invalid_ip), Toast.LENGTH_LONG).show();
+            return;
+        }
+
+        IPPort ipPortObj = new IPPort(ipPort);
+
+				/* Starting the communication service */
+        Intent intent = new Intent(this, CommunicationService.class);
+        intent.putExtra("ip", ipPortObj.getIP());
+        intent.putExtra("port", Integer.valueOf(ipPortObj.getPort()));
+        intent.putExtra("uuid", GetUUID(getBaseContext()));
+        startService(intent);
+
+    }
+    //See http://androidsnippets.com/generate-random-uuid-and-store-it
+    public synchronized static String GetUUID(Context context) {
+        if (uniqueID == null) {
+            SharedPreferences sharedPrefs = context.getSharedPreferences(
+                    PREF_UNIQUE_ID, Context.MODE_PRIVATE);
+            uniqueID = sharedPrefs.getString(PREF_UNIQUE_ID, null);
+            if (uniqueID == null) {
+                uniqueID = UUID.randomUUID().toString();
+                SharedPreferences.Editor editor = sharedPrefs.edit();
+                editor.putString(PREF_UNIQUE_ID, uniqueID);
+                editor.commit();
+            }
+        }
+        return uniqueID;
     }
 }

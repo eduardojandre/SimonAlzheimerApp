@@ -2,6 +2,7 @@ package uff.simonalzheimer.app;
 
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 
 import android.app.Notification;
@@ -33,7 +34,15 @@ public class MessageHandler extends Handler {
 		alert.setTimeStamp(getTimeStamp());
 
 		FileManager.saveAlert(context, alert);
-		Intent intent = new Intent(this.context, MainActivity.class);
+
+		ServerConnectionStub stub=ServerConnectionStub.getInstance();
+		ArrayList<Alert> alerts=stub.getAlerts();
+		if(!alerts.contains(alert)){
+			alerts.add(alert);
+		}
+
+
+		Intent intent = new Intent(this.context, uff.simonalzheimer.app.Activities.Main2Activity.class);
 		PendingIntent pIntent = PendingIntent.getActivity(this.context, 0, intent, 0);
 
 		Notification n  = new Notification.Builder(this.context)

@@ -90,7 +90,6 @@ public class AlertListAdapter extends ArrayAdapter<Alert> {
         }
         alerts.clear();
         alerts.addAll(aux);
-        FileManager.saveAlertsToFile(getContext(), alerts);
         notifyDataSetChanged();
     }
 }

@@ -1,10 +1,18 @@
 package uff.simonalzheimer.app;
 
+import android.content.Intent;
+import android.support.v4.content.LocalBroadcastManager;
+
 import java.util.ArrayList;
+
+import uff.simonalzheimer.app.Activities.Main2Activity;
+import uff.simonalzheimer.messages.Alert;
+import uff.simonalzheimer.messages.Registration;
 
 public class ServerConnectionStub {
 
     ArrayList<Routine> routines = new ArrayList<>();
+    ArrayList<Alert> alerts = new ArrayList<>();
 
     private static ServerConnectionStub singletonInstance;
 
@@ -20,6 +28,7 @@ public class ServerConnectionStub {
 
     public String getPatientName(){
         String patientName = "Alzira";
+
         return patientName;
     }
     public String getPatientNumber(){
@@ -85,4 +94,13 @@ public class ServerConnectionStub {
     public void setRoutineEnabled(Routine r, boolean enabled){
         routines.get(routines.indexOf(r)).setEnabled(enabled);
     }
+
+    public ArrayList<Alert> getAlerts() {
+        return  alerts;
+    }
+    public void setAlerts(ArrayList<Alert> aler) {
+        alerts.clear();
+        alerts.addAll(aler);
+    }
+
 }

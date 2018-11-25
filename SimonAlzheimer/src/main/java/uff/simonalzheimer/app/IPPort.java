@@ -19,7 +19,7 @@ public class IPPort {
 		m_port = vet[1];
 	}
 
-	static boolean IPRegexChecker(String ipPort)
+	public static boolean IPRegexChecker(String ipPort)
 	{
 		String pattern = "(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}):(\\d{1,5})";
 		return ipPort.matches(pattern);

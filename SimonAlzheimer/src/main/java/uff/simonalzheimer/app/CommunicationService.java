@@ -10,6 +10,9 @@ import lac.cnclib.net.NodeConnection;
 import lac.cnclib.net.mrudp.MrUdpNodeConnection;
 import lac.cnclib.sddl.message.ApplicationMessage;
 import lac.cnclib.sddl.message.Message;
+import uff.simonalzheimer.app.Activities.Main2Activity;
+import uff.simonalzheimer.messages.Registration;
+
 import android.app.Service;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -74,7 +77,6 @@ public class CommunicationService extends Service {
 		filter.addAction("lac.contextnet.sddl_pingservicetest.broadcastmessage.ActionSendPingMsg");
 		broadcastManager.registerReceiver(mConnBroadcastReceiver, filter);
 	}
-	
 	private void unregisterBroadcasts() {
 
 		broadcastManager.unregisterReceiver(mConnBroadcastReceiver);
@@ -112,6 +114,8 @@ public class CommunicationService extends Service {
 					
 					/* Assign the socket with the connection */
 					connection.connect(socket);
+
+					Main2Activity._this.register();
 
 					isConnected = true;
 					while (keepRunning) 
