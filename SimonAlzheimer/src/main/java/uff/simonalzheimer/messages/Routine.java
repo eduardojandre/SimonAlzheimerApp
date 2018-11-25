@@ -1,17 +1,26 @@
-package uff.simonalzheimer.app;
+package uff.simonalzheimer.messages;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 
-public class Routine {
+public class Routine implements Serializable {
 
     ArrayList<Condition<String,String>> conditions;
     ArrayList<String> actions;
     boolean enabled = true;
+    String name="";
 
     public Routine() {
         this.conditions = new ArrayList<>();
         this.actions = new ArrayList<>();
+    }
+
+    public String getName(){
+        return name;
+    }
+    public void setName(String s){
+        name=s;
     }
 
     public void addCondition(String key, String value, boolean notValue){

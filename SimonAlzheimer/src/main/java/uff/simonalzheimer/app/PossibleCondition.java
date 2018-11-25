@@ -1,9 +1,10 @@
 package uff.simonalzheimer.app;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 
-public class PossibleCondition {
+public class PossibleCondition implements Serializable {
 
     private String key;
     private ArrayList<String> values;

@@ -1,21 +1,26 @@
 package uff.simonalzheimer.app.Activities;
 
+import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
+import uff.simonalzheimer.app.CommunicationService;
 import uff.simonalzheimer.app.Fragments.ActionPopUp;
 import uff.simonalzheimer.app.Fragments.ConditionPopUp;
 import uff.simonalzheimer.app.PossibleCondition;
 import uff.simonalzheimer.app.R;
-import uff.simonalzheimer.app.Routine;
+import uff.simonalzheimer.messages.Routine;
 import uff.simonalzheimer.app.ServerConnectionStub;
 
 public class AddRoutineActivity extends AppCompatActivity implements ConditionPopUp.ConditionPopUpListener, ActionPopUp.ActionPopUpListener {
@@ -33,6 +38,7 @@ public class AddRoutineActivity extends AppCompatActivity implements ConditionPo
     FloatingActionButton done_fab;
 
     TextView conditionTxt;
+    EditText routineName;
     TextView actionTxt;
 
     @Override
@@ -49,6 +55,7 @@ public class AddRoutineActivity extends AppCompatActivity implements ConditionPo
 
         addConditionBtn = findViewById(R.id.addCondition);
         addActionBtn = findViewById(R.id.addActionBtn);
+        routineName = findViewById(R.id.routineName);
         done_fab = findViewById(R.id.done_fab);
         done_fab.setVisibility(View.GONE);
 
@@ -69,7 +76,9 @@ public class AddRoutineActivity extends AppCompatActivity implements ConditionPo
         done_fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                newRoutine.setName(routineName.getText().toString());
                 serverConnection.addRoutine(newRoutine);
+                sendMsg(serverConnection.getRoutines());
                 finish();
             }
         });
@@ -88,7 +97,12 @@ public class AddRoutineActivity extends AppCompatActivity implements ConditionPo
             }
         });
     }
-
+    public void sendMsg(Serializable content){
+        Intent i = new Intent(AddRoutineActivity.this, CommunicationService.class);
+        i.setAction("lac.contextnet.sddl_pingservicetest.broadcastmessage." + "ActionSendPingMsg");
+        i.putExtra("lac.contextnet.sddl_pingservicetest.broadcastmessage." + "ExtraPingMsg", content);
+        LocalBroadcastManager.getInstance(getBaseContext()).sendBroadcast(i);
+    }
     private void openConditionPopup(){
         FragmentManager fm = getSupportFragmentManager();
         ConditionPopUp conditionPopUp = new ConditionPopUp();

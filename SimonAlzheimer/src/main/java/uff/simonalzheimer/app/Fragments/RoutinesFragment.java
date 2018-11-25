@@ -18,7 +18,7 @@ import uff.simonalzheimer.app.Adapters.RoutineListAdapter;
 import uff.simonalzheimer.app.Activities.AddRoutineActivity;
 import uff.simonalzheimer.app.Activities.Main2Activity;
 import uff.simonalzheimer.app.R;
-import uff.simonalzheimer.app.Routine;
+import uff.simonalzheimer.messages.Routine;
 
 
 public class RoutinesFragment extends Fragment {

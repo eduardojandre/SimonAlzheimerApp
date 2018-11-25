@@ -13,6 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.UUID;
 
@@ -22,7 +23,7 @@ import uff.simonalzheimer.app.Fragments.DashboardFragment;
 import uff.simonalzheimer.app.Fragments.RoutinesFragment;
 import uff.simonalzheimer.app.IPPort;
 import uff.simonalzheimer.app.R;
-import uff.simonalzheimer.app.Routine;
+import uff.simonalzheimer.messages.Routine;
 import uff.simonalzheimer.app.ServerConnectionStub;
 import uff.simonalzheimer.messages.Registration;
 
@@ -93,15 +94,19 @@ public class Main2Activity extends AppCompatActivity {
         patientNumber = serverConnect.getPatientNumber();
         routines = serverConnect.getRoutines();
     }
+    public void sendMsg(Serializable content){
+        Intent i = new Intent(Main2Activity.this, CommunicationService.class);
+        i.setAction("lac.contextnet.sddl_pingservicetest.broadcastmessage." + "ActionSendPingMsg");
+        i.putExtra("lac.contextnet.sddl_pingservicetest.broadcastmessage." + "ExtraPingMsg", content);
+        LocalBroadcastManager.getInstance(getBaseContext()).sendBroadcast(i);
+    }
     public void register(){
         if(isMyServiceRunning(CommunicationService.class)){
             Registration registerRequest = new Registration();
             registerRequest.setType(Registration.ClientType.Caregiver);
 
-            Intent i = new Intent(Main2Activity.this, CommunicationService.class);
-            i.setAction("lac.contextnet.sddl_pingservicetest.broadcastmessage." + "ActionSendPingMsg");
-            i.putExtra("lac.contextnet.sddl_pingservicetest.broadcastmessage." + "ExtraPingMsg", registerRequest);
-            LocalBroadcastManager.getInstance(getBaseContext()).sendBroadcast(i);
+            sendMsg(registerRequest);
+            sendMsg(getRoutines());
         }
     }
     public void changeView(int id){

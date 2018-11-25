@@ -1,7 +1,9 @@
-package uff.simonalzheimer.app;
+package uff.simonalzheimer.messages;
 
 
-public class Condition<X,Y> {
+import java.io.Serializable;
+
+public class Condition<X,Y> implements Serializable {
 
     private X key;
     private Y value;

@@ -12,6 +12,7 @@
     <string name="msg_d_connected">Conectado!</string>
     <string name="msg_d_disconnected">Desconectado!</string>
     <string name="msg_e_servicenotrunning">Communication Service is not running!</string>
+    <string name="routineName">Routine Name</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_home">Home</string>
     <string name="title_routines">Routines</string>

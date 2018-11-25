@@ -1,13 +1,10 @@
 package uff.simonalzheimer.app;
 
-import android.content.Intent;
-import android.support.v4.content.LocalBroadcastManager;
-
 import java.util.ArrayList;
 
 import uff.simonalzheimer.app.Activities.Main2Activity;
 import uff.simonalzheimer.messages.Alert;
-import uff.simonalzheimer.messages.Registration;
+import uff.simonalzheimer.messages.Routine;
 
 public class ServerConnectionStub {
 
@@ -42,11 +39,13 @@ public class ServerConnectionStub {
             r1.addCondition(RuleValues.ACTIVITY, RuleValues.LYING, false);
             r1.addCondition(RuleValues.LOCATION, RuleValues.KITCHEN, false);
             r1.addAction(RuleValues.CALL_EMERGENCY);
+            r1.setName("Lying on Kitchen");
             routines.add(r1);
 
             Routine r2 = new Routine();
             r2.addCondition(RuleValues.TEMPERATURE, RuleValues.NORMAL, true);
             r2.addAction(RuleValues.ALERT_CAREGIVER);
+            r2.setName("Temperature");
             routines.add(r2);
 
             Routine r3 = new Routine();
@@ -54,6 +53,7 @@ public class ServerConnectionStub {
             r3.addCondition(RuleValues.ACTIVITY, RuleValues.LYING, false);
             r3.addCondition(RuleValues.LOCATION, RuleValues.KITCHEN, false);
             r3.addAction(RuleValues.ALERT_CAREGIVER);
+            r3.setName("Temperature High");
             routines.add(r3);
 
             Routine r4 = new Routine();
@@ -62,6 +62,7 @@ public class ServerConnectionStub {
             r4.addCondition(RuleValues.LOCATION, RuleValues.OUTDOOR, false);
             r4.addCondition(RuleValues.BLOOD_PRESSURE, RuleValues.LOW, false);
             r4.addAction(RuleValues.ALERT_BOTH);
+            r4.setName("Vital signs");
             routines.add(r4);
         }
         return routines;

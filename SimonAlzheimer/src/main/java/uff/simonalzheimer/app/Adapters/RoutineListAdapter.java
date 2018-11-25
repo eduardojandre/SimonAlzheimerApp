@@ -12,10 +12,10 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import uff.simonalzheimer.app.Condition;
+import uff.simonalzheimer.messages.Condition;
 import uff.simonalzheimer.app.Activities.Main2Activity;
 import uff.simonalzheimer.app.R;
-import uff.simonalzheimer.app.Routine;
+import uff.simonalzheimer.messages.Routine;
 import uff.simonalzheimer.app.ServerConnectionStub;
 
 
@@ -44,7 +44,7 @@ public class RoutineListAdapter extends ArrayAdapter<Routine> {
         TextView actions = rowView.findViewById(R.id.act_txt);
         final Routine r = routines.get(position);
 
-        routine_title.setText(String.format(context.getString(R.string.routine_title), position + 1));
+        routine_title.setText(r.getName());
         conditions.setText(condsToString(r.getConditions()));
         actions.setText(actsToString(r.getActions()));
 
