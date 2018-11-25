@@ -29,11 +29,8 @@ public class MessageHandler extends Handler {
 	}
 
 	private void notifyUser(Alert alert){
-		Toast.makeText(context, alert.getMessage(), Toast.LENGTH_LONG).show();
 
 		alert.setTimeStamp(getTimeStamp());
-
-		FileManager.saveAlert(context, alert);
 
 		ServerConnectionStub stub=ServerConnectionStub.getInstance();
 		ArrayList<Alert> alerts=stub.getAlerts();

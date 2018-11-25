@@ -3,7 +3,6 @@ package uff.simonalzheimer.messages;
 import java.io.Serializable;
 
 
-
 public class Alert implements Serializable{
 
     /**
